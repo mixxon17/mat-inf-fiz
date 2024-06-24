@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!-- Deklaracja typu dokumentu -->
+<html lang="pl"> <!-- Otwarcie elementu html z ustawieniem języka na polski -->
+<head>
+    <!-- Wczytanie bibliotek i skryptów -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> <!-- Wieloplatformowy polyfill dla ES6 -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> <!-- MathJax do renderowania wzorów matematycznych -->
+    <script src="ruch_prostoliniowy.js" defer></script> <!-- Skrypt JavaScript z obsługą interakcji z opóźnieniem (defer) -->
+
+    <meta charset="UTF-8"> <!-- Ustawienie kodowania znaków na UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag dla responsywności strony -->
+    <title>Ruch prostoliniowy</title> <!-- Tytuł strony -->
+    <link rel="stylesheet" href="ruch_prostoliniowy.css"> <!-- Wczytanie pliku CSS do stylizacji -->
+
+</head>
+<body>
+    <header>
+        <h1>Ruch prostoliniowy</h1> <!-- Nagłówek strony -->
+        <hr> <!-- Linia pozioma jako separacja -->
+    </header>
+
+    <main>
+        <article class="container"> <!-- Główny kontener artykułu -->
+            <section class="exercise">
+                <h2>Zadanie 1.</h2> <!-- Nagłówek sekcji dla zadania 1 -->
+                <p>
+                    Z gondoli balonu wznoszącego się pionowo do góry z prędkością \(v_1=2\) \(\frac{m}{s}\) wyrzucono
+                    niewielki ciężarek w chwili, kiedy gondola znajdowała się na wysokości \(h=300\) \(m\). Jak długo
+                    będzie spadał ten przedmiot na powierzchnię ziemi? Przyjmij \(g=9,81\) \(\frac{m}{s^2}\).
+                </p> <!-- Treść zadania 1 -->
+                <button type="button" class="show-answer-button" onclick="toggleCorrectAnswer(1)">Pokaż odpowiedź</button> <!-- Przycisk do pokazania odpowiedzi dla zadania 1 -->
+                <p id="correctAnswer1" class="correct-answer">Poprawna odpowiedź: \(7,9\) \(s\)</p> <!-- Element z poprawną odpowiedzią dla zadania 1 -->
+            </section>
+
+            <!-- Dodaj kolejne sekcje dla kolejnych zadań -->
+            <section class="exercise">
+                <h2>Zadanie 2.</h2> <!-- Nagłówek sekcji dla zadania 2 -->
+                <p>
+                    Jeden kamień spada z wysokości \(h_1=100\) \(cm\), a drugi z wysokości \(h_2=400\) \(cm\). Ile razy dłużej będzie spadał drugi kamień?
+                </p> <!-- Treść zadania 2 -->
+                <button type="button" class="show-answer-button" onclick="toggleCorrectAnswer(2)">Pokaż odpowiedź</button> <!-- Przycisk do pokazania odpowiedzi dla zadania 2 -->
+                <p id="correctAnswer2" class="correct-answer">Poprawna odpowiedź: \(2\) razy dłużej.</p> <!-- Element z poprawną odpowiedzią dla zadania 2 -->
+
+            </section>
+        </article>
+    </main>
+</body>
+</html>

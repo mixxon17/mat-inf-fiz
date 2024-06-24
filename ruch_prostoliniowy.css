@@ -1,0 +1,89 @@
+/* Resetowanie stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stylowanie całego dokumentu */
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.exercise {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+h2 {
+    background-color: rgba(216, 102, 231, 0.76);
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.correct-answer {
+    display: none;
+    margin-top: 10px;
+}
+
+.show-answer-button {
+    background-color: rgba(216, 102, 231, 0.76);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.show-answer-button:hover {
+    background-color: rgba(216, 102, 231, 0.589);
+}
+
+.canvas-container {
+    position: relative;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.canvas {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
